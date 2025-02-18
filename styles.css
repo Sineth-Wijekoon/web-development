@@ -1,0 +1,114 @@
+html, body {
+    background-color: #89FAF8;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-family: sans-serif;
+    width: 100%;
+    height: 100%;
+    overflow-x: hidden;
+}
+
+header {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    width: 100%;
+    margin-top: 0px;
+    top: 0;
+    position: sticky;
+}
+
+.navbar {
+    background-color: #89D4FA;
+    width: 100%;
+    display: flex;
+    justify-content: left;
+    padding: 5px;
+}
+
+.navbar ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+
+.navbar li {
+    margin-left: 20px;
+    font-size: 12px;
+}
+
+.navbar a {
+    text-decoration: none;
+    color: #333; 
+    font-weight: bold;
+}
+
+.navbar a:link{}
+
+.navbar a:visited{
+    text-decoration: none;
+    border-bottom: 1px solid #333;
+}
+
+.navbar a:hover {
+    color: #2F65FA; 
+}
+
+.logo {
+    background-color: white;
+    display: flex;
+    justify-content: center; 
+    width: 100%;
+    padding: 10px;
+}
+
+.logo img {
+    height: 50px;
+    margin-right: 10px;
+}
+
+.logo span {
+    display: flex;
+    flex-direction: column; /* Stack text vertically */
+    justify-content: center; /* Center text vertically relative to the image */
+    font-weight: bold; /* Optional: Make the text bold */
+    color: #333; /* Optional: Set text color */
+}
+
+footer {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    width: 100%;
+    background-color: white;
+    
+}
+
+.footer_text {
+    font-size: 10px;
+    display: flex;
+    justify-content: left;
+    width: 100%;
+    padding-left: 4%;
+}
+
+.footer_text a {
+    text-decoration: none;
+}
+
+main {
+    flex-grow: 1; 
+    width: 100%;
+    max-width: 1200px; 
+    padding: 20px;
+}
+
+
+
+
