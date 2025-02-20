@@ -14,7 +14,7 @@
     </head>
 
     <body>
-        <header>
+        <header id="navbar">
             <div class="logo">
                 <img src="images/logo2.png" alt="logo">
                 <div class="title">
@@ -36,9 +36,28 @@
             </nav>
         </header>
 
+        <script>
+            let lastScrollTop = 0;
+            const navbar = document.getElementById('navbar');
+        
+            window.addEventListener('scroll', function() {
+                const scrollTop = window.pageYOffset || document.documentElement.scrollTop;
+                if (scrollTop > lastScrollTop) {
+                    navbar.style.top = '-100px'; 
+                } else {
+                    navbar.style.top = '0';
+                }
+                lastScrollTop = scrollTop;
+            });
+        </script>
+
+        <div class="homepage_image">
+            <img src="images/splashbg.jpg">
+        </div>
+
         <div class="card_textarea">
             <div class="textarea">
-                <h2>Website Mission</h2>
+                <h2>Our Mission</h2>
                 <p>This website is dedicated to promoting sustainability by addressing global hunger, food security, and sustainable agriculture, aligning with the United Nations Sustainable Development Goal 2 (End Hunger). Our commitment extends beyond awareness—we advocate for responsible food production, equitable distribution, and improved nutrition to combat hunger and malnutrition.
 
                     Through innovative solutions, educational resources, and community-driven initiatives, we aim to empower individuals, farmers, and policymakers to adopt sustainable agricultural practices that preserve ecosystems, reduce food waste, and enhance resilience against climate change. By fostering collaboration and sustainable food systems, we contribute to a world where no one goes hungry, and agriculture supports both people and the planet. </p>
@@ -84,5 +103,6 @@
                 <a href="#editor">Link for your editor page</a>
             </div>
         </footer>
+
     </body>
 </html>

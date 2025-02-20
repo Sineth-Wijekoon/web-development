@@ -6,7 +6,7 @@ html,body {
   width: 100%;
   min-height: 100vh; 
   overflow-x: hidden;
-  padding-top: 80px;
+  padding-top: 50px;
 }
 
 header {
@@ -20,7 +20,8 @@ header {
     border-bottom-left-radius: 15px; 
     border-bottom-right-radius: 15px; 
     box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1); 
-    z-index: 1000; 
+    z-index: 1000;
+    transition: top 0.3s;
 }
 
 .navbar {
@@ -48,7 +49,7 @@ header {
 }
 
 .navbar a:hover {
-  border-bottom: 2px solid blue;
+  border-bottom: 2px solid lightblue;
 }
 
 
@@ -131,9 +132,9 @@ footer {
 }
 
 .textarea p {
-  width: 50%;
-  text-align: center;
-  padding-left: 25%;
+  width: 70%;
+  text-align: justify;
+  padding-left: 15%;
 }
 
  .card-container {
@@ -175,7 +176,11 @@ footer {
 .card:hover {
   transform: scale(1.05);
   box-shadow: 0px 6px 12px rgba(0, 0, 0, 0.3);
-  background: linear-gradient(to top, blue, lightblue);
+  background: linear-gradient(to top, lightblue, white);
+}
+
+.homepage_image img{
+    height: 700px;
 }
 
 
