@@ -1,108 +1,176 @@
 <!DOCTYPE html>
 <html>
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <link rel="stylesheet" href="styles.css">
-        <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
-        <title>template</title>
-        <style>
-            body{
-                background-color: white;
-            }
-        </style>
-    </head>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="styles.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <title>Home</title>
+    <style>
+      body {
+        background-color: white;
+      }
+    </style>
+  </head>
 
-    <body>
-        <header id="navbar">
-            <div class="logo">
-                <img src="images/logo2.png" alt="logo">
-                <div class="title">
-                    <h1>United Nations</h1>
-                    <p>Department of Economic and Social Affairs</p>
-                    <small>Sustainable Development</small>
-                </div>
-            </div>
-            <nav class="navbar">
-                <ul>
-                    <li><a href="homepage.html">Home Page </a></li>
-                    <li><a href="#volunteer">Volunteer</a></li>
-                    <li><a href="#table">Table</a></li>
-                    <li><a href="#user_profile">User Profile</a></li>
-                    <li><a href="#feedback">Feedback</a></li>
-                    <li><a href="#sitemap">Sitemap</a></li>
-                    <li><a href="#team">Team</a></li>
-                </ul>
-            </nav>
-        </header>
-
-        <script>
-            let lastScrollTop = 0;
-            const navbar = document.getElementById('navbar');
-        
-            window.addEventListener('scroll', function() {
-                const scrollTop = window.pageYOffset || document.documentElement.scrollTop;
-                if (scrollTop > lastScrollTop) {
-                    navbar.style.top = '-100px'; 
-                } else {
-                    navbar.style.top = '0';
-                }
-                lastScrollTop = scrollTop;
-            });
-        </script>
-
-        <div class="homepage_image">
-            <img src="images/splashbg.jpg">
+  <body>
+    <header id="navbar">
+      <div class="logo">
+        <img src="images/logo2.png" alt="logo" />
+        <div class="title">
+          <h1>United Nations</h1>
+          <p>Department of Economic and Social Affairs</p>
+          <small>Sustainable Development</small>
         </div>
+      </div>
+      <nav class="navbar">
+        <ul>
+          <li><a href="homepage.html">Home Page </a></li>
+          <li><a href="#volunteer">Volunteer</a></li>
+          <li><a href="#table">Table</a></li>
+          <li><a href="#user_profile">User Profile</a></li>
+          <li><a href="#feedback">Feedback</a></li>
+          <li><a href="#sitemap">Sitemap</a></li>
+          <li><a href="#team">Team</a></li>
+        </ul>
+      </nav>
+    </header>
 
-        <div class="card_textarea">
-            <div class="textarea">
-                <h2>Our Mission</h2>
-                <p>This website is dedicated to promoting sustainability by addressing global hunger, food security, and sustainable agriculture, aligning with the United Nations Sustainable Development Goal 2 (End Hunger). Our commitment extends beyond awareness—we advocate for responsible food production, equitable distribution, and improved nutrition to combat hunger and malnutrition.
+    <script>
+      let lastScrollTop = 0;
+      const navbar = document.getElementById("navbar");
 
-                    Through innovative solutions, educational resources, and community-driven initiatives, we aim to empower individuals, farmers, and policymakers to adopt sustainable agricultural practices that preserve ecosystems, reduce food waste, and enhance resilience against climate change. By fostering collaboration and sustainable food systems, we contribute to a world where no one goes hungry, and agriculture supports both people and the planet. </p>
-            </div>
+      window.addEventListener("scroll", function () {
+        const scrollTop =
+          window.pageYOffset || document.documentElement.scrollTop;
+        if (scrollTop > lastScrollTop) {
+          navbar.style.top = "-100px";
+        } else {
+          navbar.style.top = "0";
+        }
+        lastScrollTop = scrollTop;
+      });
+    </script>
+
+    <div class="slideshow_container">
+      <div class="homepage_image fade">
+        <img src="images/worldHunger.jpg" class="slide" />
+        <div class="image_text">735M PEOPLE FACE WORLD HUNGER</div>
+      </div>
+
+      <div class="homepage_image fade">
+        <img src="images/worldHunger1.jpg" class="slide" />
+        <div class="image_text">
+          Food exists, but waste & inequality persist.
         </div>
+      </div>
 
-        <div class="card-container">
-            <div class="card">
-                <img src="image1" alt="Content 1">
-                <div class="card-content">
-                    <h3>Randil Nimsara</h3>
-                    <p>Short description of content.</p>
-                </div>
-            </div>
-    
-            <div class="card">
-                <img src="image2.jpg" alt="Content 2">
-                <div class="card-content">
-                    <h3>Sineth Wijekoon</h3>
-                    <p>Short description of content.</p>
-                </div>
-            </div>
-    
-            <div class="card">
-                <img src="image3.jpg" alt="Content 3">
-                <div class="card-content">
-                    <h3>Ravindu Joseph</h3>
-                    <p>Short description of content.</p>
-                </div>
-            </div>
-    
-            <div class="card">
-                <img src="image4.jpg" alt="Content 4">
-                <div class="card-content">
-                    <h3>Content 4</h3>
-                    <p>Short description of content.</p>
-                </div>
-            </div>
+      <div class="homepage_image fade">
+        <img src="images/worldHunger2.jpg" class="slide" />
+        <div class="image_text">
+          Many hungry people grow food but can’t afford it.
         </div>
+      </div>
 
-        <footer>
-            <div class="footer_text">
-                <a href="#editor">Link for your editor page</a>
-            </div>
-        </footer>
+      <div class="homepage_image fade">
+        <img src="images/worldHunger3.jpg" class="slide" />
+        <div class="image_text">Hunger kills more than AIDS, malaria & TB.</div>
+      </div>
+    </div>
 
-    </body>
+    <script>
+      let slideIndex = 0;
+      showSlides();
+
+      function showSlides() {
+        let i;
+        let slides = document.getElementsByClassName("homepage_image");
+        for (i = 0; i < slides.length; i++) {
+          slides[i].style.display = "none";
+        }
+        slideIndex++;
+        if (slideIndex > slides.length) {
+          slideIndex = 1;
+        }
+        slides[slideIndex - 1].style.display = "block";
+        setTimeout(showSlides, 4000);
+      }
+    </script>
+
+    <div class="quote">
+      <span
+        >There is more than enough food produced in the world to feed everyone
+        on the planet. Yet 733 million people still go hungry.</span
+      >
+      <img src="images/quoteImage.webp" />
+    </div>
+    <br>
+
+    <div class="card_textarea">
+        <div class="textarea_image">
+            <img src="images/sdg.jpg">
+        </div>
+      <div class="textarea">
+        <h1>Our Mission</h1>
+        <p>
+          We are dedicated to promoting sustainability by addressing
+          global hunger, food security, and sustainable agriculture, aligning
+          with the United Nations Sustainable Development Goal 2 (End Hunger) by
+          2030. Our commitment extends beyond awareness—we advocate for
+          responsible food production, equitable distribution, and improved
+          nutrition to combat hunger and malnutrition. Through innovative
+          solutions, educational resources, and community-driven initiatives, we
+          aim to empower individuals, farmers, and policymakers to adopt
+          sustainable agricultural practices that preserve ecosystems, reduce
+          food waste, and enhance resilience against climate change. By
+          fostering collaboration and sustainable food systems, we contribute to
+          a world where no one goes hungry, and agriculture supports both people
+          and the planet.
+        </p>
+      </div>
+    </div>
+
+    <div class="card-container">
+      <div class="card">
+        <img src="image1" alt="Content 1" />
+        <div class="card-content">
+          <h3>Randil Nimsara</h3>
+          <p>Short description of content.</p>
+        </div>
+      </div>
+
+      <div class="card">
+        <img src="image2.jpg" alt="Content 2" />
+        <div class="card-content">
+          <h3>Sineth Wijekoon</h3>
+          <p>Short description of content.</p>
+        </div>
+      </div>
+
+      <div class="card">
+        <img src="image3.jpg" alt="Content 3" />
+        <div class="card-content">
+          <h3>Ravindu Joseph</h3>
+          <p>Short description of content.</p>
+        </div>
+      </div>
+
+      <div class="card">
+        <img src="image4.jpg" alt="Content 4" />
+        <div class="card-content">
+          <h3>Content 4</h3>
+          <p>Short description of content.</p>
+        </div>
+      </div>
+    </div>
+
+    <footer>
+      <div class="footer_text">
+        <a href="#editor">Link for your editor page</a>
+      </div>
+    </footer>
+  </body>
 </html>
