@@ -59,9 +59,9 @@
       <div class="homepage_image fade">
         <img src="images/worldHunger2.jpg" class="slide" alt="image">
         <div class="text_container">
-        <div class="image_text" id="image3">
-          Many hungry people grow food but can’t afford it.
-        </div>
+          <div class="image_text" id="image3">
+            Many hungry people grow food but can’t afford it.
+          </div>
         </div>
       </div>
 
@@ -72,25 +72,6 @@
         </div>
       </div>
     </div>
-
-    <script>
-      let slideIndex = 0;
-      showSlides();
-
-      function showSlides() {
-          let i;
-          let slides = document.getElementsByClassName("homepage_image");
-          for (i = 0; i < slides.length; i++) {
-              slides[i].style.display = "none";
-          }
-          slideIndex++;
-          if (slideIndex > slides.length) {
-              slideIndex = 1;
-          }
-          slides[slideIndex - 1].style.display = "block";
-          setTimeout(showSlides, 4000);
-      }
-    </script>
 
     <div class="quote" id="quote">
       <span
@@ -105,6 +86,31 @@
       <div class="sticky">
           <div class="scroll_section">
           </div>
+      </div>
+    </div>
+
+    <div class="stats_container">
+      <div class="stats">
+        <ul>
+          <li><b>50%</b> of Child Deaths Are Linked to Hunger</li>
+          <li><b>148 Million</b> Children Affected Globally</li>
+          <li><b>152 Million</b> more people face Hunger than in 2019</li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="causes_container">
+      <div class="causes_image">
+        <img src="images/childrenHands.jpg">
+      </div>
+      <div class="causes_text">
+        <h2>Causes for global Hunger?</h2>
+        <ol>
+          <li>Conflict</li>
+          <li>Climate</li>
+          <li>Economy</li>
+          <li>Displacement</li>
+        </ol>
       </div>
     </div>
 
