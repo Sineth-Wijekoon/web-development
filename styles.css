@@ -415,3 +415,57 @@ img {
   font-size: 40px;
   color: #e81202;
 }
+
+.table_container {
+  margin-left: 15%;
+}
+
+#statistics_table {
+  width: 80%;
+  border-collapse: collapse;
+  background-color: white;
+  border: 20px solid #F0C430;
+  box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.3); 
+}
+
+#statistics_table td {
+  border-left: 1px solid black ;
+}
+
+#statistics_table th {
+  border-left: 1px solid black;
+}
+
+#statistics_table th, #statistics_table td {
+  padding: 10px;
+  text-align: center;
+}
+
+.heading_image img{
+  width: 100px;
+}
+
+.insecurelevel_container {
+  padding-left: 30%;
+  width: 80px;
+}
+
+.insecurelevel_container img{
+  width: 100px;
+}
+
+#global_hunger {
+  background-color: #F0B737;
+}
+
+#global_image {
+  background-color: #F0A437;
+}
+
+#colour_row {
+  background-color: #EEF095;
+}
+
+#colour_row2 {
+  background-color: #F4EDC0;
+}

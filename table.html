@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="styles.css">
+        <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+        <title>template</title>
+    </head>
+
+    <body>
+        <header id="navbar">
+            <div class="logo">
+                <img src="images/logo3.jpg" alt="logo">
+                <div class="title">
+                    <h1>United Nations</h1>
+                    <p><b>Sustainable Development</b></p>
+                    <small>End hunger, achieve food security</small>
+                </div>
+            </div>
+            <nav class="navbar">
+                <ul>
+                    <li><a href="homepage.html">Home Page </a></li>
+                    <li><a href="#volunteer">Volunteer</a></li>
+                    <li><a href="table.html">Table</a></li>
+                    <li><a href="#user_profile">User Profile</a></li>
+                    <li><a href="#feedback">Feedback</a></li>
+                    <li><a href="#sitemap">Sitemap</a></li>
+                    <li><a href="#team">Team</a></li>
+                </ul>
+            </nav>
+        </header>
+
+        <script>
+            let lastScrollTop = 0;
+            const navbar = document.getElementById('navbar');
+        
+            window.addEventListener('scroll', function() {
+                const scrollTop = window.pageYOffset || document.documentElement.scrollTop;
+                if (scrollTop > lastScrollTop) {
+                    // Scroll Down
+                    navbar.style.top = '-100px'; // Adjust this value based on your navbar height
+                } else {
+                    // Scroll Up
+                    navbar.style.top = '0';
+                }
+                lastScrollTop = scrollTop;
+            });
+        </script>
+
+        <body>
+            <div class="table_container">
+                <table id="statistics_table">
+                    <tr>
+                        <th rowspan="2" id="global_image">Image</th>
+                        <th colspan="4" id="global_hunger">Global Hunger Statistics</th>
+                    </tr>
+                    <tr>
+                        <th>Population<div class="heading_image"><img src="images/population.jpg"></div></th>
+                        <th>Undernourished People<div class="heading_image"><img src="images/undernourished.jpg"></div></th>
+                        <th>Poverty Rate<div class="heading_image"><img src="images/poverty_logo.jpg"></div></th>
+                        <th>Food Insecurity<div class="heading_image"><img src="images/foodinsecurity_level.jpg"></div></th>
+                    </tr>
+                    <tr id="colour_row2">
+                        <td>Africa</td>
+                        <td>1460</td>
+                        <td>20%</td>
+                        <td>35%</td>
+                        <td><div class="insecurelevel_container"><img src="images/tick.jpg"></div></td>
+                    </tr>
+                    <tr id="colour_row">
+                        <td>Asia</td>
+                        <td>4750</td>
+                        <td>9%</td>
+                        <td>12%</td>
+                        <td><div class="insecurelevel_container"><img src="images/tick.jpg"></div></td>
+                    </tr>
+                    <tr id="colour_row2">
+                        <td>Europe</td>
+                        <td>750</td>
+                        <td>2.5%</td>
+                        <td>9%</td>
+                        <td><div class="insecurelevel_container"><img src="images/cross_mark.jpg"></div></td>
+                    </tr>
+                    <tr id="colour_row">
+                        <td>North America</td>
+                        <td>600</td>
+                        <td>2%</td>
+                        <td>10%</td>
+                        <td><div class="insecurelevel_container"><img src="images/cross_mark.jpg"></div></td>
+                    </tr>
+                    <tr id="colour_row2">
+                        <td>South America</td>
+                        <td>430</td>
+                        <td>7%</td>
+                        <td>20%</td>
+                        <td><div class="insecurelevel_container"><img src="images/tick.jpg"></div></td>
+                    </tr> 
+                    <tr id="colour_row">
+                        <td>Oceania</td>
+                        <td>43</td>
+                        <td>6%</td>
+                        <td>18%</td>
+                        <td><div class="insecurelevel_container"><img src="images/tick.jpg"></div></td>
+                    </tr>
+                </table>
+            </div>
+        </body>
+        
+        <footer>
+            <div class="footer_text">
+                <a href="#editor">Link to your editor page</a>
+            </div>
+        </footer>
+    </body>
+</html>
