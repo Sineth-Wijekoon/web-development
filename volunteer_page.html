@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="styles.css">
+        <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+        <title>Volunteer</title>
+    </head>
+    <style>
+        
+    </style>
+    <body>
+        <header id="navbar">
+            <div class="logo">
+                <img src="images/logo3.jpg" alt="logo">
+                <div class="title">
+                    <h1>United Nations</h1>
+                    <p><b>Sustainable Development</b></p>
+                    <small>End hunger, achieve food security</small>
+                </div>
+            </div>
+            <nav class="navbar">
+                <ul>
+                    <li><a href="homepage.html">Home Page </a></li>
+                    <li><a href="volunteer_page.html">Volunteer</a></li>
+                    <li><a href="table.html">Table</a></li>
+                    <li><a href="#user_profile">User Profile</a></li>
+                    <li><a href="#feedback">Feedback</a></li>
+                    <li><a href="#sitemap">Sitemap</a></li>
+                    <li><a href="#team">Team</a></li>
+                </ul>
+            </nav>
+        </header>
+
+        <script>
+            let lastScrollTop = 0;
+            const navbar = document.getElementById('navbar');
+        
+            window.addEventListener('scroll', function() {
+                const scrollTop = window.pageYOffset || document.documentElement.scrollTop;
+                if (scrollTop > lastScrollTop) {
+                    // Scroll Down
+                    navbar.style.top = '-100px'; // Adjust this value based on your navbar height
+                } else {
+                    // Scroll Up
+                    navbar.style.top = '0';
+                }
+                lastScrollTop = scrollTop;
+            });
+        </script>
+
+        <h1 id="volunteer_heading">4 Volunteer Programs Found</h1>
+        <div class="dropdown_list">
+            <select id="dropdown">
+                <option value="Most Popular">Most Popular</option>
+                <option value="Most Recent">Most Recent</option>
+                <option value="Newest to Oldest">Newest to Oldest</option>
+                <option value="Oldest to Newest">Oldest to Newest</option>
+            </select>
+        </div>
+        <h4 id="volunteer_sub">4 of 4 Programs found</h4>
+        <div class = "volunteer_table">
+            <div class="table1">
+                <span id="country">Sri Lanka</span>
+                <br>
+                <span id="heading">Childcare in Jaffna</span>
+                <div class="table1_image"></div>
+                <table id="table_1">
+                    <tr>
+                        <td id="table1_td"><img src="images/books.jpg"><br>Help with hunger</td>
+                        <td id="table1_td"><img src="images/clock.jpg"><br>3-5 Hours of Volunteering per day</td>
+                        <td id="table1_td"><img src="images/money.jpg"><br>Program fees from $10 per day</td>
+                    </tr>
+                </table>
+                <span>Durations from 1-16 Weeks</span>
+                <br>
+                <span>Volunteers aged 16+ and families</span>
+                <br>
+                <br>
+                <table id="table_2">
+                    <tr id="th_row">
+                        <th id="table2_th">Duration</th>
+                        <th id="table2_th">Program Fee</th>
+                    </tr>
+                    <tr id="td_row">
+                        <td id="table2_td">2 Weeks</td>
+                        <td id="table2_td">$435</td>
+                    </tr>
+                </table>
+                <p>
+                    Volunteer in childcare centers and kindergartens in low-income area, helping with all aspects of supervising and stiumulating local children, including in lessons, games and in break times.
+                </p>
+                <br>
+                <br>
+                <button id="project">View Project</button>
+                <button id="apply">Apply</button>
+                <br>
+                <br>
+            </div>
+            <div class="table2">
+                <span id ="country">Africa</span>
+                <br>
+                <span id="heading">Childrens in Africa</span>
+                <div class="table2_image"></div>
+                <table id="table_3">
+                    <tr>
+                        <td id="table3_td">Help with hunger</td>
+                        <td id="table3_td">3-5 Hours of Volunteering per day</td>
+                        <td id="table3_td">Program fees from $10 per day</td>
+                    </tr>
+                </table> 
+                <span>Durations from 1-16 Weeks</span>
+                <br>
+                <span>Volunteers aged 16+ and families</span>
+                <br>
+                <br>
+                <table id="table_4">
+                    <tr id="th_row">
+                        <th id="table_4_th">Duration</th>
+                        <th id="table_4_th">Program Fee</th>
+                    </tr>
+                    <tr id="td_row">
+                        <td id="table_4_td">2 Weeks</td>
+                        <td id="table_4_td">$435</td>
+                    </tr>
+                </table>
+                <p>
+                    Volunteer in childcare centers and kindergartens in low-income area, helping with all aspects of supervising and stiumulating local children, including in lessons, games and in break times.
+                </p>
+                <br>
+                <br>
+                <button id="project">View Project</button>
+                <button id="apply">Apply</button>
+                <br>
+                <br>
+            </div>
+            <div class="table3">
+                <span id="country">Ethiyophia</span>
+                <br>
+                <span id="heading">Childrens in Ethiyophia</span>
+                <div class="table5_image"></div>
+                <table id="table_1">
+                    <tr>
+                        <td id="table1_td">Help with hunger</td>
+                        <td id="table1_td">3-5 Hours of Volunteering per day</td>
+                        <td id="table1_td">Program fees from $10 per day</td>
+                    </tr>
+                </table>
+                <span>Durations from 1-16 Weeks</span>
+                <br>
+                <span>Volunteers aged 16+ and families</span>
+                <br>
+                <br>
+                <table id="table_2">
+                    <tr id="th_row">
+                        <th id="table2_th">Duration</th>
+                        <th id="table2_th">Program Fee</th>
+                    </tr>
+                    <tr id="td_row">
+                        <td id="table2_td">2 Weeks</td>
+                        <td id="table2_td">$435</td>
+                    </tr>
+                </table>
+                <p>
+                    Volunteer in childcare centers and kindergartens in low-income area, helping with all aspects of supervising and stiumulating local children, including in lessons, games and in break times.
+                </p>
+                <br>
+                <br>
+                <button id="project">View Project</button>
+                <button id="apply">Apply</button>
+                <br>
+                <br>
+            </div>
+            <div class="table4">
+                <span id="country">Kenya</span>
+                <br>
+                <span id="heading">Childcare in Kenya</span>
+                <div class="table6_image"></div>
+                <table id="table_1">
+                    <tr>
+                        <td id="table1_td">Help with hunger</td>
+                        <td id="table1_td">3-5 Hours of Volunteering per day</td>
+                        <td id="table1_td">Program fees from $10 per day</td>
+                    </tr>
+                </table>
+                <span>Durations from 1-16 Weeks</span>
+                <br>
+                <span>Volunteers aged 16+ and families</span>
+                <br>
+                <br>
+                <table id="table_2">
+                    <tr id="th_row">
+                        <th id="table2_th">Duration</th>
+                        <th id="table2_th">Program Fee</th>
+                    </tr>
+                    <tr id="td_row">
+                        <td id="table2_td">2 Weeks</td>
+                        <td id="table2_td">$435</td>
+                    </tr>
+                </table>
+                <p>
+                    Volunteer in childcare centers and kindergartens in low-income area, helping with all aspects of supervising and stiumulating local children, including in lessons, games and in break times.
+                </p>
+                <br>
+                <br>
+                <button id="project">View Project</button>
+                <button id="apply">Apply</button>
+                <br>
+                <br>
+            </div>
+
+
+        </div>
+
+        <div class="container">
+            <div class="rating">9.4/10 </div>
+            <h3>Exceptional</h3>
+            <h4>Recent Reviews</h4>
+            <div class="reviews">
+                <div class="review">
+                    <strong>Daniela G.</strong> (Aug 12, 2019)
+                    <p>We had a great 4-day stay with our family. Enrico was very welcoming...</p>
+                </div>
+                <div class="review">
+                    <strong>Dr. Jean M B.</strong> (Aug 10, 2018)
+                    <p>We booked for 10 days and found Enrico to be very accommodating...</p>
+                </div>
+            </div>
+            <div class="feedback">
+                <p>Send us your review:</p>
+                <textarea placeholder="Got suggestions? We'd love to hear them!"></textarea>
+                <button>Send Feedback</button>
+                <button id="cancel">Cancel</button>
+            </div>
+        </div>
+        <br>    
+        <footer>
+            <div class="footer_text">
+                <a href="#editor">Link to your editor page</a>
+            </div>
+        </footer>
+
+    </body>
+</html>
