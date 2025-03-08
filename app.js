@@ -21,7 +21,7 @@ window.addEventListener('scroll',(e) => {
 })
 
 function transform(section){
-    const quote = document.getElementById("quote")
+    const quote = document.getElementById("sticky")
     const offsetTop = quote.parentElement.offsetTop;
     const scrollSection = section.querySelector('.scroll_section')
     let percentage = ((window.scrollY - offsetTop) / window.innerHeight) * 100;
@@ -42,21 +42,4 @@ let lastScrollTop = 0;
     }
     lastScrollTop = scrollTop;
 });
-
-let slideIndex = 0;
-showSlides();
-
-function showSlides() {
-    let i;
-    let slides = document.getElementsByClassName("homepage_image");
-    for (i = 0; i < slides.length; i++) {
-        slides[i].style.display = "none";
-    }
-    slideIndex++;
-    if (slideIndex > slides.length) {
-        slideIndex = 1;
-    }
-    slides[slideIndex - 1].style.display = "block";
-    setTimeout(showSlides, 4000);
-}
 

@@ -1,11 +1,85 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
     <head>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <link rel="stylesheet" href="styles.css">
         <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
-        <title>template</title>
+        <title>Table</title>
+        <style>
+            .table_container {
+            margin-left: 15%;
+            }
+
+            #statistics_table {
+            width: 80%;
+            border-collapse: collapse;
+            background-color: white;
+            border: 20px solid #F0C25C;
+            box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.3); 
+            }
+
+            #statistics_table td {
+            border-left: 1px solid black ;
+            }
+
+            #statistics_table th {
+            border-left: 1px solid black;
+            }
+
+            #statistics_table th, #statistics_table td {
+            padding: 10px;
+            text-align: center;
+            }
+
+            .heading_image img{
+            width: 100px;
+            }
+
+            .insecurelevel_container {
+            padding-left: 30%;
+            width: 80px;
+            }
+
+            .insecurelevel_container img{
+            width: 100px;
+            }
+
+            #global_hunger {
+            background-color: #F0B737;
+            font-size: 40px;
+            }
+
+            #global_image {
+            background-color: #F0A437;
+            width: 20%;
+            }
+
+            .colour_row {
+            background-color: #EEF095;
+            }
+
+            .colour_row2 {
+            background-color: #F4EDC0;
+            }
+
+            #global_image img{
+                width: 100%;
+            }
+
+            #global_image img:hover{
+                transform: scale(1.05);
+            }
+
+            .country{
+                font-size: 25px;
+                font-weight: bold;
+            }
+
+            td:hover{
+                font-size: larger;
+            }
+        </style>
     </head>
 
     <body>
@@ -24,7 +98,7 @@
                     <li><a href="volunteer_page.html">Volunteer</a></li>
                     <li><a href="table.html">Table</a></li>
                     <li><a href="#user_profile">User Profile</a></li>
-                    <li><a href="#feedback">Feedback</a></li>
+                    <li><a href="feedback_form.html">Feedback</a></li>
                     <li><a href="#sitemap">Sitemap</a></li>
                     <li><a href="#team">Team</a></li>
                 </ul>
@@ -48,68 +122,69 @@
             });
         </script>
 
-        <body>
+    
             <div class="table_container">
                 <table id="statistics_table">
                     <tr>
-                        <th rowspan="2" id="global_image">Image</th>
+                        <th rowspan="2" id="global_image"><img src="images/logo3.jpg" alt="website logo"></th>
                         <th colspan="4" id="global_hunger">Global Hunger Statistics</th>
                     </tr>
                     <tr>
-                        <th>Population<div class="heading_image"><img src="images/population.jpg"></div></th>
-                        <th>Undernourished People<div class="heading_image"><img src="images/undernourished.jpg"></div></th>
-                        <th>Poverty Rate<div class="heading_image"><img src="images/poverty_logo.jpg"></div></th>
-                        <th>Food Insecurity<div class="heading_image"><img src="images/foodinsecurity_level.jpg"></div></th>
+                        <th id="column_heading" scope="col">
+                            Population(Millions)<div class="heading_image"><img src="images/population.jpg" alt="population"></div>
+                        </th>
+                        <th scope="col">Undernourished People<div class="heading_image"><img src="images/undernourished.jpg" alt="undernourished"></div></th>
+                        <th scope="col">Poverty Rate<div class="heading_image"><img src="images/poverty_logo.jpg" alt="poverty_logo"></div></th>
+                        <th scope="col">Food Insecurity<div class="heading_image"><img src="images/foodinsecurity_level.jpg" alt="foodinsecurity"></div></th>
                     </tr>
-                    <tr id="colour_row2">
-                        <td>Africa</td>
+                    <tr class="colour_row2">
+                        <td class="country">Africa</td>
                         <td>1460</td>
                         <td>20%</td>
                         <td>35%</td>
-                        <td><div class="insecurelevel_container"><img src="images/tick.jpg"></div></td>
+                        <td><div class="insecurelevel_container"><img src="images/tick.jpg" alt="tick"></div></td>
                     </tr>
-                    <tr id="colour_row">
-                        <td>Asia</td>
+                    <tr class="colour_row">
+                        <td class="country">Asia</td>
                         <td>4750</td>
                         <td>9%</td>
                         <td>12%</td>
-                        <td><div class="insecurelevel_container"><img src="images/tick.jpg"></div></td>
+                        <td><div class="insecurelevel_container"><img src="images/tick.jpg" alt="tick"></div></td>
                     </tr>
-                    <tr id="colour_row2">
-                        <td>Europe</td>
+                    <tr class="colour_row2">
+                        <td class="country">Europe</td>
                         <td>750</td>
                         <td>2.5%</td>
                         <td>9%</td>
-                        <td><div class="insecurelevel_container"><img src="images/cross_mark.jpg"></div></td>
+                        <td><div class="insecurelevel_container"><img src="images/cross_mark.jpg" alt="cross"></div></td>
                     </tr>
-                    <tr id="colour_row">
-                        <td>North America</td>
+                    <tr class="colour_row">
+                        <td class="country">North America</td>
                         <td>600</td>
                         <td>2%</td>
                         <td>10%</td>
-                        <td><div class="insecurelevel_container"><img src="images/cross_mark.jpg"></div></td>
+                        <td><div class="insecurelevel_container"><img src="images/cross_mark.jpg" alt="cross"></div></td>
                     </tr>
-                    <tr id="colour_row2">
-                        <td>South America</td>
+                    <tr class="colour_row2">
+                        <td class="country">South America</td>
                         <td>430</td>
                         <td>7%</td>
                         <td>20%</td>
-                        <td><div class="insecurelevel_container"><img src="images/tick.jpg"></div></td>
+                        <td><div class="insecurelevel_container"><img src="images/tick.jpg" alt="tick"></div></td>
                     </tr> 
-                    <tr id="colour_row">
-                        <td>Oceania</td>
+                    <tr class="colour_row">
+                        <td class="country">Oceania</td>
                         <td>43</td>
                         <td>6%</td>
                         <td>18%</td>
-                        <td><div class="insecurelevel_container"><img src="images/tick.jpg"></div></td>
+                        <td><div class="insecurelevel_container"><img src="images/tick.jpg" alt="tick"></div></td>
                     </tr>
                 </table>
             </div>
-        </body>
         
         <footer>
             <div class="footer_text">
-                <a href="#editor">Link to your editor page</a>
+                <a href="pageEditor_ST0.html">Sineth Wijekoon Page Editor</a>
             </div>
         </footer>
     </body>

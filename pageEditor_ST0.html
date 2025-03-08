@@ -1,0 +1,328 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Page Editor Student 2 - Sineth Wijekoon</title>
+
+    <link rel="stylesheet" href="Page_Editor/css/pageEditor_validator.css"> <!-- External CSS link -->
+
+</head>
+<body>
+    
+    <header id="navbar">
+        <div class="logo">
+            <img src="images/logo3.jpg" alt="logo">
+            <div class="title">
+                <h1>United Nations</h1>
+                <b>Sustainable Development</b>
+                <br>
+                <small>End hunger, achieve food security</small>
+            </div>
+        </div>
+        <nav class="navbar">
+            <ul>
+                <li><a href="homepage.html">Home Page </a></li>
+                <li><a href="volunteer_page.html">Volunteer</a></li>
+                <li><a href="table.html">Table</a></li>
+                <li><a href="#user_profile">User Profile</a></li>
+                <li><a href="feedback_form.html">Feedback</a></li>
+                <li><a href="#sitemap">Sitemap</a></li>
+                <li><a href="#team">Team</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <script>
+        let lastScrollTop = 0;
+        const navbar = document.getElementById('navbar');
+    
+        window.addEventListener('scroll', function() {
+            const scrollTop = window.pageYOffset || document.documentElement.scrollTop;
+            if (scrollTop > lastScrollTop) {
+                // Scroll Down
+                navbar.style.top = '-100px'; // Adjust this value based on your navbar height
+            } else {
+                // Scroll Up
+                navbar.style.top = '0';
+            }
+            lastScrollTop = scrollTop;
+        });
+    </script>
+
+    <section class="stud">
+        <h2>Sineth Wijekoon, Student 2</h2>
+    </section>
+
+    <div class="container">
+        <!-- Main content area -->
+        <main>
+
+            <!-- Update those first three sections for the pages you were responsible to implement -->
+
+            <section>
+                <h2 id="splash">Home Page</h2>
+                    <h3>Technical Description</h3>
+                        <h4>HTML Structure and Key Elements</h4>
+                            <h5>Navigation Bar</h5>
+                            <ul>
+                                <li>The header tag contains the logo and the navbar, which makes up the whole navbar</li>
+                                <li>The Navbar is created using an unordered list to create a horizontal menu</li>
+                                <li>The navigation bar provides quick access to different pages in the website seamlessly</li>
+                            </ul>
+                            <h5>The Logo</h5>
+                            <ul>
+                                <li>The homelogo_container contains and img tag and an h1 tag</li>
+                                <li>Broken down into two classes one for the image and one for the heading</li>
+                                <li>This is used to present the user with the logo and an immediate insight into the websites goal</li>
+                            </ul>
+                            <h5>Quote Section</h5>
+                            <ul>
+                                <li>Uses span for a text inside a textbox and img for an image to describe the text</li>
+                                <li>Engages the users emotionally and provides a fact, making users feel sympathatic</li>
+                            </ul>
+                            <h5>Horizontal Scrolling Section</h5>
+                            <ul>
+                                <li>Horizontal scrolling of 3 images as the user scrolls down</li>
+                                <li>The functionality is created using javascript</li>
+                                <li>3 images scroll horizontally to enhance user experience</li>
+                            </ul>
+                            <h5>Statistics Section</h5>
+                            <ul>
+                                <li>Uses an unordered list to display key statistics horizontally</li>
+                                <li>Visually emphasizes key numbers related to hunger</li>
+                            </ul>
+                            <h5>Causes Section</h5>
+                            <ul>
+                                <li>img tag on the left and an h2 and ordered list on the right</li>
+                                <li>Describes some of the causes for global hunger in a list and an image is added for visual enhancement</li>
+                                <li>Coloured border for card like effect</li>
+                            </ul>
+                            <h5>Mission Section</h5>
+                            <ul>
+                                <li>Two coloumn layout with an image from the SDG and a brief description of the website mission</li>
+                            </ul>
+                            <h5>Team Cards</h5>
+                            <ul>
+                                <li>Each card contains an image,title and description related to each members content pages</li>
+                                <li>Clicking on each card will take you to the relevant members content page</li>
+                            </ul>
+                            <h5>Footer</h5>
+                            <ul>
+                                <li>Contains a link to the authors editor page</li>
+                            </ul>
+                        <h4>CSS Techniques and Design Choices</h4>
+                            <h5>Navbar Styling</h5>
+                            <ul>
+                                <li>Flexbox (display: flex; justify-content: space-between;): Ensures a responsive navigation menu.</li>
+                                <li>Navbar a:hover is used to create a light yellow box around the current hovered link to enhance user experience</li>
+                                <li>Havbar a:active is used to make the yellow box remain around the website the user is currently on</li>
+                            </ul>
+                            <h5>Image Styling</h5>
+                            <ul>
+                                <li>border-radius has been used to soften the corners of images for a modern look</li>
+                                <li>box-shadow creates a shadow around each image</li>
+                                <li>transition: (on hover) has been used to add an interactive zoom effect as the user hovers on the image</li>
+                            </ul>
+                            <h5>Quote Section Styling</h5>
+                            <ul>
+                                <li>Large font size ensures the key message stands out</li>
+                                <li>The background colour used creates a strong contrast to highlight the content</li>
+                            </ul>
+                            <h5>Sticky Section Styling</h5>
+                            <ul>
+                                <li>position: sticky; top: 0;: Keeps the section fixed while scrolling.</li>
+                            </ul>
+                            <h5>Statistics Section Styling</h5>
+                            <ul>
+                                <li>Flexbox display:flex aligns items horizontally</li>
+                                <li>The colour contrast highlights numbers to draw attention</li>
+                            </ul>
+                            <h5>Causes Section Styling</h5>
+                            <ul>
+                                <li>(margin-left: 700px; margin-top: -300px;): Aligns the text box over the image.</li>
+                                <li>border-top and border-right creates a frame-like effect</li>
+                            </ul>
+                            <h5>Visual Styling</h5>
+                            <ul>
+                                <li>Use of a variety of headings make the important topics stand out</li>
+                                <li>Hover effects improve user engagements</li>
+                            </ul>
+
+                    
+                    <h3>Accessibility</h3>
+                        <h5>Aria Roles and Labels</h5>
+                        <ul>
+                            <li>Use of roles to assist with assitive techologies and labels provide a clear description or purpose for a section</li>
+                            <li>role="navigation" defines the navigation bar for assistive technologies.</li>
+                            <li>aria-label="Main Navigation Bar" provides a clear description for the navigation region.</li>
+                        </ul>
+                        <h5>Semantic HTML Usage</h5>
+                        <ul>
+                            <li>Proper use of tags like header section and figure improves the structure of the code</li>
+                            <li>use of figure and figcaption for images with descriptive texts</li>
+                        </ul>
+                        <h5>Image Accessibility</h5>
+                        <ul>
+                            <li>Included alt attributes to all image tags to explain the purpose of the buttons</li>
+                        </ul>
+                        <h5>Text readability</h5>
+                        <ul>
+                            <li>Use of h1 - h6 heading types to have a hierachy and to maintain a logical flow</li>
+                        </ul>
+                        <h5>Links</h5>
+                        <ul>
+                            <li>Use of descriptive link names for user easiness</li>
+                        </ul>
+                    
+                    <h3>Link to the validation page</h3> <!-- Update the path to link the Page Editor with the splash page -->
+                        <p><a href="validation_ST0.html#splashVal">Validation Page</a></p> <!-- Update the path to link the Page Editor with the validation page and make it jump to the marker that contains a snapshot for the splash page -->
+
+                    <h3>Link to the page</h3>
+                        <p><a href="homepage.html">Homepage</a></p>
+            </section>
+
+            <section>
+                <h2 id="volunteer">Table Page</h2>
+                    <h3>Technical Description</h3>
+                    <h4>HTML Structure and Key Tags</h4>
+                    <h5>Table Container</h5>
+                    <ul>
+                        <li>Provides a container for the entire table</li>
+                        <li>The use of a container helps in creating a structured design, and allows stlying to be applied to the entire page</li>
+                    </ul>
+                    <h5>Table tag</h5>
+                    <ul>
+                        <li>The table tag is used to represent the data in a tabular format, it contains all the rows and columns</li>
+                        <li>The id-statistics table is used to identify the table in css</li>
+                    </ul>
+                    <h5>tr, td and th Tags</h5>
+                    <ul>
+                        <li>tr tag is used to define a table row</li>
+                        <li>td tag is used to represent the data in a single cell</li>
+                        <li>th tag represents table headings and used to emphasize headings of a certain column</li>
+                    </ul>
+                    <h4>CSS and Style</h4>
+                    <h5>border-collapse: collapse</h5>
+                    <ul>
+                        <li>Used to remove the gaps between the table borders</li>
+                        <li>Makes the table look more compact</li>
+                    </ul>
+                    <h5>Rowspan & Colspan</h5>
+                    <ul>
+                        <li>Used to merge multiple rows/columns together</li>
+                        <li>The table topic is merged into 4 four columns giving it more prominence</li>
+                    </ul>
+                    <h5>Position Relative and Absolute</h5>
+                    <ul>
+                        <li>Position Relative is used to establish it as a containing element for its children element</li>
+                        <li>Position Absolute is used to position an element relative to its parent container</li>
+                    </ul>
+                    <h5>Font-Size and Background Colour</h5>
+                    <ul>
+                        <li>font-size is used to adjust the font size of the text within the cell</li>
+                        <li>Background Colour is used to adjust the colour of the cell</li>
+                    </ul>
+                    <h5>:hover</h5>
+                    <ul>
+                        <li>:hover is used to adjust css so that it changes to specified properties on hover</li>
+                    </ul>
+                    <h3>Accessibility</h3>
+                        <ul>
+                            <li>I have used alt text in images to display alt text incase the image doesnt appear</li>
+                            <li>Used th scope="col" helps assistive technolgies assovciate with respective columns</li>
+                            <li>Contrasting Colours for better readability</li>
+                        </ul>
+
+                    <h3>Link to the validation page</h3> <!-- Update the path to link the Page Editor with the splash page -->
+                        <p><a href="validation_ST0.html#volunteerVal">Validation Page</a></p> <!-- Update the path to link the Page Editor with the validation page and make it jump to the marker that contains a snapshot for the splash page -->
+
+                        
+                    <h3>Link to the page</h3>
+                        <p><a href="table.html">Table Page</a></p>
+            </section>
+
+            <section>
+                <h2 id="content">Content Page</h2>
+                    <h3>Technical Description</h3>
+                        <p>Explain the HTML and CSS techniques used to implement this page. Justify the logic and purpose of the key tags and styling choices focusing on functionality and design without copying large code sections. Explain the purpose of key HTML tags and CSS properties. Specify key HTML tags and CSS properties used to create structure and styling.</p> 
+
+                    <h3>Accessibility</h3>
+                        <p>Explain how you used to addressed accessibility in this particular page you implemented.</p>
+
+                    <h3>Link to the validation page</h3> <!-- Update the path to link the Page Editor with the splash page -->
+                        <p><a href="validation_ST0.html#contentVal">Include a link to the validation page</a>, use the marker to jump to the corresponding section of the validation page.</p> <!-- Update the path to link the Page Editor with the validation page and make it jump to the marker that contains a snapshot for the splash page -->
+
+                        
+                    <h3>Link to the page</h3>
+                        <p><a href="content.html">Include a link to the actual page you describe.</a></p>
+            </section>
+
+            <section>
+                <h2 id="challenge"> Challenges and Lessons Learned</h2>
+                    <p>Detail any challenges encountered during the implementation process and explain how they were resolved. Reflect on the lessons learned from overcoming these challenges.</p> 
+            </section>
+
+            <section>
+                <h2 id="compliance"> Compliance</h2>
+                    <p>Discuss how the pages you have created are compliant with Janet regulations governing web page publication. This includes demonstrating your understanding and application of these regulations. Be realistic and truthful.</p> 
+
+                    
+            </section>
+
+            <section>
+                <h2 id="ref">References</h2>
+                <p>Provide links to resources you used following a consistent format (e.g., APA, MLA, or a simplified style). For example:<br><br>
+                    <ul class="ref">
+                        <li>iStock (2025) <i>iStock.</i> Available at: <a href="#">https://www.istockphoto.com/</a> (Last accessed: 11 Feb 2025).</li>
+                        <li>Duckett, J., 2011. HTML and CSS: Design and Build Websites,<i>John Willey&Sons. Inc. Indianappolis.</i></li>
+                    </ul>
+            </section>
+
+            <p class="top"><a href="#top">Go top</a></p>
+        </main>
+
+        <!-- Sidebar area -->
+        <aside>
+            <h3>Core pages developed:</h3>
+
+        <!-- Customize this to the role you undertook. Keep only the list items you were responsible to develop, delete the rest -->
+            <ul class="top-level-ul">
+                <!-- Keep only the list items you were responsible to develop, delete the rest and update the links to the corresponding markers -->
+                <li>Student 1</li>
+                    <ul> 
+                        <li><a href="#splash">Splash page</a></li>
+                        <li><a href="#volunteer">Volunteer page</a></li>
+                        <li><a href="#content">Content page</a></li>
+                    </ul>
+                <li>Student 2</li>
+                    <ul>
+                        <li><a href="#splash">Home page </a></li>
+                        <li><a href="#volunteer">Table page</a></li>
+                        <li><a href="#content">Content page</a></li>
+                    </ul>
+                <li>Student 3</li>
+                    <ul>
+                        <li><a href="#">Feedback page</a> </li>
+                        <li><a href="#">Team page</a></li>
+                        <li><a href="#">Content page</a></li>
+                    </ul>
+                <li>Student 4</li>
+                    <ul>
+                        <li><a href="#">Profile page </a></li>
+                        <li><a href="#">Sitemap page</a></li>
+                        <li><a href="#">Content page</a></li>
+                    </ul>
+                <li><a href="#challenge">Challenges and Lessons Learned</a></li>
+                <li><a href="#compliance">Compliance</a></li>
+                <li><a href="#ref">References</a></li>
+            </ul>
+        </aside>
+    </div>
+
+    <footer>
+        <p>Replace the footer with your teams' website footer</p>
+    </footer>
+</body>
+</html>

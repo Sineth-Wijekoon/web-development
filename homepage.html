@@ -10,8 +10,256 @@
     >
     <title>Home</title>
     <style>
-      body {
+      .card_textarea {
+        width: 100%;
+        background: white;
+        overflow: hidden;
+        display: flex;
+        gap: 0px;
+        padding: 75px 30px 30px 0px;
+        margin-top: 30px;
+        border-left: 10px solid #FFC251;
+        border-right: 10px solid #FFC251;
+      }
+
+      .textarea {
+        display: flex;
+        justify-content: flex-start;
+        align-items: center;
+        flex-direction: column;
+        text-align: center;
+        margin-top: 5%;
+        width: 100%;
+      }
+
+      .textarea p {
+        width: 60%;
+        text-align: center;
+        font-size: 30px;
+      }
+
+      .textarea_image {
+        width: auto;
+        display: flex;
+        height: 600px;
+        padding-left: 15%;
+      }
+
+      .textarea_image img {
+        width: auto;
+        border-radius: 5px;
+        box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+        transition: transform 0.3s ease-in-out;
+      }
+
+      .textarea_image img:hover {
+        transform: scale(1.03);
+      }
+
+      .card-container {
+        display: flex;
+        justify-content: center;
+        gap: 20px;
+        padding: 20px;
+        flex-wrap: wrap;
+      }
+
+      .card {
+        width: 250px;
+        background: whitesmoke;
+        border-radius: 8px;
+        box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+        overflow: hidden;
+        transition: transform 0.3s ease, box-shadow 0.3s ease;
+      }
+
+      .card img {
+        width: 100%;
+        height: 150px;
+        object-fit: cover;
+      }
+
+      .card-content {
+        padding: 15px;
+      }
+
+      .card:hover {
+        transform: scale(1.05);
+        box-shadow: 0px 6px 12px rgba(0, 0, 0, 0.3);
+        background: linear-gradient(to top, lightblue, white);
+      }
+
+      .homelogo_container {
+        height: 550px;
+        width: 100%;
+        background-color: whitesmoke;
+        border-left: 10px solid #FFC251;
+        border-right: 10px solid #FFC251;
+      }
+
+      .homelogo_image{
+        margin-left: 38%;
+      }
+
+      .homelogo_image img{
+        height: 350px;
+        width: auto;
+      }
+
+      .homelogo_text {
+        padding-top: 20px;
+        margin-left: 17%;
+      }
+
+      .homelogo_text h1{
+        width: 80%;
+        text-align: center;
+        color: #FF8429;
+      }
+
+      .quote {
+        display: flex;
+        justify-content: space-evenly;
+        text-align: center;
+        font-weight: bold;
+        padding: 75px 75px 75px 0px;
+        width: 100%;
+        margin-left: 50px;
+      }
+
+      .quote span {
+        background-color: #FFC251;
+        border-radius: 15px;
+        font-size: 40px;
+        width: 30%;
+        padding-top: 20px;
+      }
+
+      .quote img {
+        margin-top: 10px;
+        height: 100%;
+        width: 500px;
+        border-radius: 5px;
+        box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+        transition: transform 0.3s ease-in-out;
+      }
+
+      .quote img:hover {
+        transform: scale(1.05);
+      }
+
+      h1 {
+        font-size: 3rem;
+      }
+
+      p {
+        width: 50%;
+        margin: 2rem 0;
+      }
+
+      .sticky_parent {
+        background-color: whitesmoke;
+        height: 50vh;
+        border-left: 10px solid #FFC251;
+        border-right: 10px solid #FFC251;
+      }
+
+      .sticky {
+        overflow: hidden;
+        position: sticky;
+        top: 0;
+        height: 100%;
+      }
+
+      .scroll_section {
+        margin-top: 30px;
+        position: absolute;
+        top: 0;
+        height: 100%;
+        width: 500vw;
+        will-change: transform;
+        display: flex;
+        align-items: center;
+        padding-left: 180vw;
+      }
+
+      img {
+        width: 10%;
+        object-fit: cover;
+        object-position: center;
+      }
+
+      .causes_container {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        padding-top: 30px;
+      }
+
+      .causes_image {
+        margin-left: 120px;
+      }
+
+      .causes_image img {
+        height: 500px;
+        width: 800px;
+        border-radius: 15px;
+      }
+
+      .causes_text {
         background-color: white;
+        margin-left: 700px;
+        margin-top: -300px;
+        height: 300px;
+        width: 50%;
+        border-top: 15px solid #edbc2f;
+        border-right: 15px solid #edbc2f;
+        padding: 30px;
+        padding-left: 60px;
+      }
+
+      .causes_text h2 {
+        font-size: 50px;
+        width: 750px;
+        color: #FF8429;
+      }
+
+      .causes_text ol {
+        font-size: 30px;
+        padding-top: 20px;
+        padding-left: 80px;
+      }
+
+      .stats_container {
+        height: 250px;
+        background-color: whitesmoke;
+        border-left: 10px solid #FFC251;
+        border-right: 10px solid #FFC251;
+      }
+
+      .stats {
+        padding-top: 60px;
+        width: 100%;
+      }
+
+      .stats ul {
+        display: flex;
+        list-style: none;
+        padding-left: 14%;
+        margin: 0;
+      }
+
+      .stats ul li {
+        margin-right: 200px;
+        font-size: 30px;
+        color: #e52e28;
+        text-align: center;
+        width: 270px;
+      }
+
+      .stats ul li b {
+        font-size: 40px;
+        color: #e81202;
       }
     </style>
   </head>
@@ -19,73 +267,44 @@
   <body>
     <header id="navbar">
       <div class="logo">
-          <img src="images/logo3.jpg" alt="logo">
+          <img src="images/logo3.jpg" alt="website logo">
           <div class="title">
-              <h1>United Nations</h1>
-              <p><b>Sustainable Development</b></p>
-              <small>End hunger, achieve food security</small>
-          </div>
+            <h1>United Nations</h1>
+            <b>Sustainable Development</b>
+            <br>
+            <small>End hunger, achieve food security</small>
+        </div>
       </div>
-      <nav class="navbar">
+      <nav class="navbar" aria-label="Main Navigation Bar">
         <ul>
             <li><a href="homepage.html">Home Page </a></li>
             <li><a href="volunteer_page.html">Volunteer</a></li>
             <li><a href="table.html">Table</a></li>
             <li><a href="#user_profile">User Profile</a></li>
-            <li><a href="#feedback">Feedback</a></li>
+            <li><a href="feedback_form.html">Feedback</a></li>
             <li><a href="#sitemap">Sitemap</a></li>
             <li><a href="#team">Team</a></li>
         </ul>
     </nav>
     </header>
-    
-    <div class="homeimg">
-      <div class="slideshow_container" id="slideshow_container">
-        <div class="homepage_image fade">
-          <img src="images/worldHunger.jpg" class="slide" alt="image">
-          <div class="text_container">
-            <div class="image_text" id="image1">735M PEOPLE FACE WORLD HUNGER</div>
-          </div>
-        </div>
 
-        
-        <div class="homepage_image fade">
-          <img src="images/worldHunger1.jpg" class="slide" alt="image">
-          <div class="text_container">
-            <div class="image_text" id="image2">
-              Food exists, but waste & inequality persist.
-            </div>
-          </div>
-        </div>
-
-        <div class="homepage_image fade">
-          <img src="images/worldHunger2.jpg" class="slide" alt="image">
-          <div class="text_container">
-            <div class="image_text" id="image3">
-              Many hungry people grow food but can’t afford it.
-            </div>
-          </div>
-        </div>
-
-        <div class="homepage_image fade">
-          <img src="images/worldHunger3.jpg" class="slide" alt="image">
-          <div class="text_container">
-            <div class="image_text" id="image4">Hunger kills more than AIDS, malaria & TB.</div>
-          </div>
-        </div>
+    <div class="homelogo_container">
+      <figure class="homelogo_image">
+        <img src="images/logo3.jpg" alt="website logo">
+      </figure>
+      <div class="homelogo_text">
+        <h1>End hunger, achieve food security and improved nutrition and promote sustainable agriculture</h1>
       </div>
     </div>
 
     <div class="quote" id="quote">
-      <span
-        >There is more than enough food produced in the world to feed everyone
-        on the planet. Yet 733 million people still go hungry.</span
-      >
-      <img src="images/istockphoto-471518057-2048x2048.jpg" alt="image">
+      <span id="quote_text">There is more than enough food produced in the world to feed everyone
+        on the planet. Yet 733 million people still go hungry.</span>
+      <img src="images/istockphoto-471518057-2048x2048.jpg" alt="image of children collecting water" id="quoteimg">
     </div>
     <br>
 
-    <div class="sticky_parent">
+    <div class="sticky_parent" id="sticky" aria-label="Scrollable Images">
       <div class="sticky">
           <div class="scroll_section">
           </div>
@@ -103,10 +322,10 @@
     </div>
 
     <div class="causes_container">
-      <div class="causes_image">
-        <img src="images/childrenHands.jpg">
-      </div>
-      <div class="causes_text">
+      <figure class="causes_image">
+        <img src="images/childrenHands.jpg" alt="children reaching out for food">
+      </figure>
+      <article class="causes_text">
         <h2>Causes for global Hunger?</h2>
         <ol>
           <li>Conflict</li>
@@ -114,13 +333,13 @@
           <li>Economy</li>
           <li>Displacement</li>
         </ol>
-      </div>
+      </article>
     </div>
 
     <div class="card_textarea">
-        <div class="textarea_image">
+        <figure class="textarea_image">
             <img src="images/sdg.jpg" alt="image">
-        </div>
+        </figure>
       <div class="textarea">
         <h1>Our Mission</h1>
         <p>
@@ -129,9 +348,9 @@
       </div>
     </div>
 
-    <div class="card-container">
+    <section class="card-container">
       <div class="card">
-        <img src="image1" alt="Content 1">
+        <img src="image1" alt="Randil Nimsara Profile Picture">
         <div class="card-content">
           <h3>Randil Nimsara</h3>
           <p>Short description of content.</p>
@@ -139,7 +358,7 @@
       </div>
 
       <div class="card">
-        <img src="image2.jpg" alt="Content 2">
+        <img src="image2.jpg" alt="Sineth Wijekoon Profile Picture">
         <div class="card-content">
           <h3>Sineth Wijekoon</h3>
           <p>Short description of content.</p>
@@ -147,17 +366,17 @@
       </div>
 
       <div class="card">
-        <img src="image3.jpg" alt="Content 3">
+        <img src="image3.jpg" alt="Ravindu Joseph Profile Picture">
         <div class="card-content">
           <h3>Ravindu Joseph</h3>
           <p>Short description of content.</p>
         </div>
       </div>
-    </div>
+    </section>
 
     <footer>
       <div class="footer_text">
-        <a href="#editor">Link for your editor page</a>
+        <a href="pageEditor_ST0.html">Sineth Wijekoon Page Editor</a>
       </div>
     </footer>
 

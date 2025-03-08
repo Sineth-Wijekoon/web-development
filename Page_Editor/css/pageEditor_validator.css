@@ -3,6 +3,7 @@ body {
     font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
+    overflow-x: hidden;
 }
 
 .container {
@@ -28,12 +29,6 @@ section {
     border: 1px solid #ddd;
     background-color: #fafafa;
 }
-header, footer {
-    text-align: center;
-    background-color: #333;
-    color: white;
-    padding: 10px 0;
-}
 
 .ref li{
     list-style: none;
@@ -53,7 +48,7 @@ aside li{
     line-height: 0;
     background-color: #cbccc2ef;
     color: white;
-    margin-top: 8px;
+    margin-top: 120px;
 }
 
 .top {
@@ -78,5 +73,111 @@ aside li{
 }
 
 img{
-    width: 90%;
+    width: 13%;
+}
+
+header {
+    display: flex;
+    width: 100%;
+    position: fixed;
+    top: 0;
+    right: 0;
+    left: 0;
+    background-color: white;
+    border-bottom-left-radius: 15px;
+    border-bottom-right-radius: 15px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+    z-index: 1000;
+    transition: top 0.3s;
+}
+
+.navbar {
+    width: 100%;
+    display: flex;
+    justify-content: right;
+    align-items: center;
+    padding: 30px 50px;
+}
+  
+.navbar ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+  
+.navbar li {
+    margin-left: 20px;
+    font-size: 18px;
+}
+  
+.navbar a {
+    text-decoration: none;
+    color: black;
+}
+  
+.navbar a:hover {
+    background-color: #BCE08C;
+    font-size: 19px;
+    color: black;
+    padding: 6px;
+    border-radius: 7px;
+}
+  
+footer {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    padding: 40px 20px;
+    height: 100%;
+    width: 100%;
+    background-color: white;
+    margin-top: auto;
+}
+  
+.footer_text {
+    display: flex;
+    justify-content: left;
+    width: 100%;
+    padding-left: 14px;
+}
+  
+.footer_text a {
+    text-decoration: none;
+}
+  
+.logo {
+    display: flex;
+    width: 100%;
+    padding: 10px;
+}
+  
+.logo img {
+    height: 80px;
+    margin-right: 10px;
+    margin-left: 15px;
+    margin-top: 0;
+}
+  
+.title {
+    margin-top: 10px;
+}
+  
+.title h1 {
+    margin: 0;
+    font-size: 20px;
+    color: #333;
+}
+  
+.title p,
+.title small {
+    margin: 0;
+    color: #333;
+    width: 100%;
+}
+
+#validation_img{
+    height: 100%;
+    width: 100%;
 }

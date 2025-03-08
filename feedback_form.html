@@ -1,0 +1,251 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="styles.css">
+        <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+        <title>Feedback Form</title>
+        <style>
+            .container {
+                max-width: 600px;
+                background: white;
+                padding: 20px;
+                border-radius: 10px;
+                box-shadow: 0 0 10px rgba(75, 72, 72, 0.1);
+                margin-top: 20px;
+                margin-left: 30%;
+            }
+            h1 {
+                text-align: center;
+                color: #333;
+            }
+            .required {
+                color: red;
+            }
+            label {
+                font-weight: bold;
+                display: block;
+                margin-top: 10px;
+            }
+            input, select, textarea {
+                width: calc(100% - 16px);
+                padding: 8px;
+                margin-top: 5px;
+                border: 1px solid #ccc;
+                border-radius: 5px;
+                display: block;
+                transition: all 0.3s ease-in-out;
+            }
+            input:hover, select:hover, textarea:hover {
+                border-color: #007bff;
+                box-shadow: 0 0 5px rgba(0, 123, 255, 0.3);
+            }
+            input:focus, select:focus, textarea:focus {
+                border-color: #0056b3;
+                box-shadow: 0 0 8px rgba(0, 86, 179, 0.5);
+                outline: none;
+            }
+            .radio-group {
+                display: flex;
+                gap: 10px;
+                margin-top: 5px;
+                align-items: center;
+            }
+            .rating-group label {
+                font-size: 2rem;
+                color: gray;
+                cursor: pointer;
+                transition: color 0.3s ease-in-out;
+            }
+            .rating-group input { 
+                display: none; 
+            }
+            .rating-group input:checked ~ label {
+                color: gold;
+            }
+            fieldset {
+                border: 1px solid #ccc;
+                border-radius: 5px;
+                padding: 10px;
+                margin-top: 15px;
+            }
+            legend {
+                font-weight: bold;
+                color: #333;
+            }
+            button {
+                width: 100%;
+                background-color: #007bff;
+                color: white;
+                padding: 10px;
+                border: none;
+                border-radius: 5px;
+                margin-top: 15px;
+                cursor: pointer;
+                transition: background-color 0.3s ease-in-out, transform 0.2s ease-in-out;
+            }
+            button:hover {
+                background-color: #0056b3;
+                transform: scale(1.05);
+            }
+
+        </style>
+        
+    </head>
+
+    <body>
+        <header id="navbar">
+            <div class="logo">
+                <img src="images/logo3.jpg" alt="logo">
+                <div class="title">
+                    <h1>United Nations</h1>
+                    <b>Sustainable Development</b>
+                    <br>
+                    <small>End hunger, achieve food security</small>
+                </div>
+            </div>
+            <nav class="navbar">
+                <ul>
+                    <li><a href="homepage.html">Home Page </a></li>
+                    <li><a href="volunteer_page.html">Volunteer</a></li>
+                    <li><a href="table.html">Table</a></li>
+                    <li><a href="#user_profile">User Profile</a></li>
+                    <li><a href="feedback_form.html">Feedback</a></li>
+                    <li><a href="#sitemap">Sitemap</a></li>
+                    <li><a href="#team">Team</a></li>
+                </ul>
+            </nav>
+        </header>
+
+        <script>
+            let lastScrollTop = 0;
+            const navbar = document.getElementById('navbar');
+        
+            window.addEventListener('scroll', function() {
+                const scrollTop = window.pageYOffset || document.documentElement.scrollTop;
+                if (scrollTop > lastScrollTop) {
+                    // Scroll Down
+                    navbar.style.top = '-100px'; // Adjust this value based on your navbar height
+                } else {
+                    // Scroll Up
+                    navbar.style.top = '0';
+                }
+                lastScrollTop = scrollTop;
+            });
+        </script>
+
+        <div class="container">
+            <h1>Feedback Form</h1>
+            <p class="required">Required fields *</p>
+            <form id="feedbackForm">
+                <fieldset>
+                    <legend>Personal Details</legend>
+                    <label for="name">Enter your name: <span class="required">*</span></label>
+                    <input type="text" id="name" required>
+
+                    <label for="email">Enter your email: <span class="required">*</span></label>
+                    <input type="email" id="email" required>
+
+                    <label for="phone">Enter your phone number:</label>
+                    <input type="tel" id="phone" placeholder="e.g., +123456789">
+                    
+                    <label for="address">Enter your address:</label>
+                    <textarea id="address" rows="3"></textarea>
+                </fieldset>
+
+                <fieldset>
+                    <legend>Website Experience</legend>
+                    <label>Was this your first time visiting our website?</label>
+                    <div class="radio-group">
+                        <input type="radio" name="firstVisit" value="yes"> Yes
+                        <input type="radio" name="firstVisit" value="no"> No
+                    </div>
+
+                    <label>Was the website informative and easy to navigate?</label>
+                    <div class="radio-group">
+                        <input type="radio" name="easyToNavigate" value="yes"> Yes
+                        <input type="radio" name="easyToNavigate" value="no"> No
+                    </div>
+                </fieldset>
+
+                <fieldset>
+                    <legend>Feedback & Suggestions</legend>
+                    <label>If "No", suggest any improvements:</label>
+                    <textarea rows="3"></textarea>
+                    
+                    <label>How satisfied are you with our Services? (1-10)</label>
+                    <select>
+                        <option value="">Select a rating</option>
+                        <option value="1">1</option>
+                        <option value="2">2</option>
+                        <option value="3">3</option>
+                        <option value="4">4</option>
+                        <option value="5">5</option>
+                        <option value="6">6</option>
+                        <option value="7">7</option>
+                        <option value="8">8</option>
+                        <option value="9">9</option>
+                        <option value="10">10</option>
+                    </select>
+                    
+                    <label>Would you recommend our services to others?</label>
+                    <div class="radio-group">
+                        <input type="radio" name="recommend" value="yes"> Yes
+                        <input type="radio" name="recommend" value="no"> No
+                    </div>
+                </fieldset>
+                
+                <fieldset>
+                    <legend>Additional Preferences</legend>
+                    <label>Would you like to receive further updates?</label>
+                    <select>
+                        <option value="">Select an option</option>
+                        <option value="yes">Yes - via Email</option>
+                        <option value="yes">Yes - via </option>
+                        <option value="no">No</option>
+                    </select>
+
+                    <label>Select topics you are interested in (Hold CTRL to select multiple):</label>
+                    <select multiple>
+                        <option value="events">Upcoming Events</option>
+                        <option value="discounts">Exclusive Discounts</option>
+                        <option value="news">Latest News</option>
+                        <option value="services">New Services</option>
+                    </select>
+                </fieldset>
+
+                <fieldset>
+                    <legend>Rating & Upload</legend>
+                    <label>Rate your experience:</label>
+                    <div class="radio-group">
+                        <input type="radio" name="rating" value="1"> ⭐
+                        <input type="radio" name="rating" value="2"> ⭐⭐
+                        <input type="radio" name="rating" value="3"> ⭐⭐⭐
+                        <input type="radio" name="rating" value="4"> ⭐⭐⭐⭐
+                        <input type="radio" name="rating" value="5"> ⭐⭐⭐⭐⭐
+                    </div>
+
+                    <label>Upload a screenshot or file:</label>
+                    <input type="file">
+                </fieldset>
+                
+                <fieldset>
+                    <legend>Additional Questions or Requests</legend>
+                    <textarea rows="3"></textarea>
+                    <label>Select Date of Feedback:</label>
+                    <input type="date">
+                </fieldset>
+                
+                <button type="submit">Submit</button>
+            </form>
+        </div>
+        <br>
+
+        <footer>
+            <div class="footer_text">
+                <a href="#editor">Link to your editor page</a>
+            </div>
+        </footer>
+    </body>
+</html>

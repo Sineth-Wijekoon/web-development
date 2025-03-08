@@ -6,10 +6,298 @@
         <link rel="stylesheet" href="styles.css">
         <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
         <title>Volunteer</title>
+        <style>
+            .volunteer_table {
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            grid-template-rows: repeat(8, 1fr);
+            gap: 20px;
+            width: 70%;
+            padding: 10px;
+            margin: auto;
+            }
+
+            .table1 {
+            grid-column: span 2 / span 2;
+            grid-row: span 8 / span 8;
+            border-radius: 15px;
+            background-color: white;
+            padding: 10px;
+            box-shadow: 5px 5px 15px 0px rgba(0, 0, 0, 0.3);
+            }
+
+            .table1_image{
+            height: 250px;
+            background-image: url(images/childHunger1.jpg);
+            background-size: cover;
+            }
+
+            .table2 {
+            grid-column: span 2 / span 2;
+            grid-row: span 8 / span 8;
+            grid-column-start: 3;
+            background-color: white;
+            padding: 10px;
+            border-radius: 15px;
+            box-shadow: 5px 5px 15px 0px rgba(0, 0, 0, 0.3);
+            }
+
+            .table3 {
+            grid-column: span 2 / span 2;
+            grid-row: span 8 / span 8;
+            border-radius: 15px;
+            background-color: white;
+            padding: 10px;
+            box-shadow: 5px 5px 15px 0px rgba(0, 0, 0, 0.3);
+            }
+
+            .table4 {
+            grid-column: span 2 / span 2;
+            grid-row: span 8 / span 8;
+            border-radius: 15px;
+            background-color: white;
+            padding: 10px;
+            }
+
+            .dropdown_list {
+            padding-left: 90%;
+            }
+
+            #dropdown {
+            padding: 10px;
+            border-style: none;
+            box-shadow: 5px 5px 15px 0px rgba(0, 0, 0, 0.3);
+            border-radius: 7px;
+            }
+
+            #table_1{
+            padding: 10px 50px;
+            width: 100%;
+            border-spacing: 10px;
+            }
+
+            #table1_td {
+            flex-direction: row; 
+            justify-content: space-between;
+            align-items: center; 
+            background-color: whitesmoke;
+            padding: 20px;
+            text-align: center;
+            border-radius: 5px;
+            }
+
+            #country{
+            font-size: 20px;
+            font-weight: bold;
+            padding: 50px;
+            }
+
+            #heading {
+            font-size: 17px;
+            padding: 5px;
+            }
+
+            span{
+            padding: 50px;
+            }
+
+            #table_2{
+            padding: 10px 50px;
+            margin-left: 20px;
+            width: 95%;
+            border-collapse: collapse;
+            }
+
+            #table2_th {
+            text-align: left;
+            padding: 7px;
+            padding-top: 5px;
+            color: white;
+            }
+
+            #th_row{
+            background-color: #333;
+            }
+
+            #table2_td{
+            background-color: whitesmoke;
+            padding-top: 15px;
+            padding-left: 10px;
+            }
+
+            p{
+            width: 90%;
+            padding-left: 30px;
+            font-size: 17px;
+            }
+
+            button {
+            border-style: none;
+            }
+
+            #project{
+            padding: 10px 70px;
+            border-radius: 10px;
+            margin-left: 20px;
+            background-color: lightblue;
+            font-weight: bold;
+            color: white;
+            }
+
+            #apply {
+            padding: 10px 90px;
+            border-radius: 10px;
+            background-color: green;
+            font-weight: bold;
+            color: white;
+            }
+
+            .table2_image{
+            height: 250px;
+            background-image: url(images/africa1.jpg);
+            background-size: cover;
+            }
+
+            #table_3{
+            padding: 10px 50px;
+            width: 100%;
+            border-spacing: 10px;
+            }
+
+            #table3_td {
+            flex-direction: row; 
+            justify-content: space-between;
+            align-items: center; 
+            background-color: whitesmoke;
+            padding: 20px;
+            text-align: center;
+            border-radius: 5px;
+            }
+
+            #table_4{
+            padding: 10px 50px;
+            margin-left: 20px;
+            width: 95%;
+            border-collapse: collapse;
+            }
+
+            #table_4_th {
+            text-align: left;
+            padding: 7px;
+            padding-top: 5px;
+            color: white;
+            }
+
+            #table_4_td{
+            background-color: whitesmoke;
+            padding-top: 15px;
+            padding-left: 10px;
+            }
+
+            .table5_image{
+            height: 250px;
+            background-image: url(images/ethiyophia.jpg);
+            background-size: cover;
+            }
+
+            .table6_image{
+            height: 250px;
+            background-image: url(images/kenya.jpg);
+            background-size: cover;
+            }
+
+            #volunteer_heading{
+            margin-left: 70px;
+            margin-top: 30px;
+            }
+
+            #volunteer_sub{
+            margin-left: 70px;
+            }
+
+            #table1_td img{
+            height: 50px;
+            width: 50px;
+            }
+
+            .container {
+            max-width: 100%;
+            margin: auto;
+            background: white;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            }
+
+            .container h3 {
+            margin-left: 30px;
+            }
+
+            .container h4 {
+            margin-left: 415px;
+            margin-bottom: 40px;
+            }
+
+            .rating {
+            font-size: 34px;
+            color: #2d8f2d;
+            font-weight: bold;
+            margin-left: 30px;
+            margin-top: 30px;
+            }
+
+            .reviews {
+            margin-top: 0;
+            margin-left: 415px;
+            }
+
+            .review {
+            background: white;
+            padding: 10px;
+            border-radius: 5px;
+            margin-bottom: 10px;
+            border: 1px solid black;
+            }
+
+            .feedback {
+            margin-top: 20px;
+            margin-left: 415px;
+            }
+
+            .feedback textarea {
+            width: 100%;
+            height: 80px;
+            padding: 8px;
+            border-radius: 5px;
+            border: 1px solid #ccc;
+            resize: none;
+            }
+
+            .feedback button {
+            background: #2d8f2d;
+            color: white;
+            padding: 8px 12px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            margin-top: 10px;
+            }
+
+            #cancel {
+            background-color: white;
+            color: green;
+            border: 1px solid black ;
+            }
+
+            #apply:hover{
+                transform: scale(1.1);
+            }
+
+            #project:hover{
+                transform: scale(1.1);
+            }
+        </style>
     </head>
-    <style>
-        
-    </style>
     <body>
         <header id="navbar">
             <div class="logo">
@@ -26,7 +314,7 @@
                     <li><a href="volunteer_page.html">Volunteer</a></li>
                     <li><a href="table.html">Table</a></li>
                     <li><a href="#user_profile">User Profile</a></li>
-                    <li><a href="#feedback">Feedback</a></li>
+                    <li><a href="feedback_form.html">Feedback</a></li>
                     <li><a href="#sitemap">Sitemap</a></li>
                     <li><a href="#team">Team</a></li>
                 </ul>
@@ -62,7 +350,7 @@
         <h4 id="volunteer_sub">4 of 4 Programs found</h4>
         <div class = "volunteer_table">
             <div class="table1">
-                <span id="country">Sri Lanka</span>
+                <span id="country">India</span>
                 <br>
                 <span id="heading">Childcare in Jaffna</span>
                 <div class="table1_image"></div>
@@ -88,6 +376,7 @@
                         <td id="table2_td">$435</td>
                     </tr>
                 </table>
+                <br>
                 <p>
                     Volunteer in childcare centers and kindergartens in low-income area, helping with all aspects of supervising and stiumulating local children, including in lessons, games and in break times.
                 </p>
@@ -105,12 +394,12 @@
                 <div class="table2_image"></div>
                 <table id="table_3">
                     <tr>
-                        <td id="table3_td">Help with hunger</td>
-                        <td id="table3_td">3-5 Hours of Volunteering per day</td>
-                        <td id="table3_td">Program fees from $10 per day</td>
+                        <td id="table1_td"><img src="images/books.jpg"><br>Help with hunger</td>
+                        <td id="table1_td"><img src="images/clock.jpg"><br>2-3 Hours of Volunteering per day</td>
+                        <td id="table1_td"><img src="images/money.jpg"><br>Program fees from $15 per day</td>
                     </tr>
                 </table> 
-                <span>Durations from 1-16 Weeks</span>
+                <span>Durations from 1-5 Weeks</span>
                 <br>
                 <span>Volunteers aged 16+ and families</span>
                 <br>
@@ -121,12 +410,13 @@
                         <th id="table_4_th">Program Fee</th>
                     </tr>
                     <tr id="td_row">
-                        <td id="table_4_td">2 Weeks</td>
-                        <td id="table_4_td">$435</td>
+                        <td id="table_4_td">4 Weeks</td>
+                        <td id="table_4_td">$600</td>
                     </tr>
                 </table>
+                <br>
                 <p>
-                    Volunteer in childcare centers and kindergartens in low-income area, helping with all aspects of supervising and stiumulating local children, including in lessons, games and in break times.
+                    Volunteer in villages, helping children, and dividing donations among families. Help in finding the required resources or required food for the children. Transport will be provided
                 </p>
                 <br>
                 <br>
@@ -138,16 +428,16 @@
             <div class="table3">
                 <span id="country">Ethiyophia</span>
                 <br>
-                <span id="heading">Childrens in Ethiyophia</span>
+                <span id="heading">Children in Ethiopia</span>
                 <div class="table5_image"></div>
                 <table id="table_1">
                     <tr>
-                        <td id="table1_td">Help with hunger</td>
-                        <td id="table1_td">3-5 Hours of Volunteering per day</td>
-                        <td id="table1_td">Program fees from $10 per day</td>
+                        <td id="table1_td"><img src="images/books.jpg"><br>Help with hunger</td>
+                        <td id="table1_td"><img src="images/clock.jpg"><br>6 Hours of Volunteering per day</td>
+                        <td id="table1_td"><img src="images/money.jpg"><br>Program fees from $20 per day</td>
                     </tr>
                 </table>
-                <span>Durations from 1-16 Weeks</span>
+                <span>Durations from 1-4 Weeks</span>
                 <br>
                 <span>Volunteers aged 16+ and families</span>
                 <br>
@@ -158,12 +448,13 @@
                         <th id="table2_th">Program Fee</th>
                     </tr>
                     <tr id="td_row">
-                        <td id="table2_td">2 Weeks</td>
-                        <td id="table2_td">$435</td>
+                        <td id="table2_td">1 Weeks</td>
+                        <td id="table2_td">$255</td>
                     </tr>
                 </table>
+                <br>
                 <p>
-                    Volunteer in childcare centers and kindergartens in low-income area, helping with all aspects of supervising and stiumulating local children, including in lessons, games and in break times.
+                    Assist in childcare centers and preschools in underserved areas, supporting all aspects of child supervision and engagement, including educational activities, playtime, and meal breaks.
                 </p>
                 <br>
                 <br>
@@ -179,9 +470,9 @@
                 <div class="table6_image"></div>
                 <table id="table_1">
                     <tr>
-                        <td id="table1_td">Help with hunger</td>
-                        <td id="table1_td">3-5 Hours of Volunteering per day</td>
-                        <td id="table1_td">Program fees from $10 per day</td>
+                        <td id="table1_td"><img src="images/books.jpg"><br>Help with hunger</td>
+                        <td id="table1_td"><img src="images/clock.jpg"><br>2-3 Hours of Volunteering per day</td>
+                        <td id="table1_td"><img src="images/money.jpg"><br>Program fees from $30 per day</td>
                     </tr>
                 </table>
                 <span>Durations from 1-16 Weeks</span>
@@ -195,13 +486,13 @@
                         <th id="table2_th">Program Fee</th>
                     </tr>
                     <tr id="td_row">
-                        <td id="table2_td">2 Weeks</td>
-                        <td id="table2_td">$435</td>
+                        <td id="table2_td">6 Weeks</td>
+                        <td id="table2_td">$1000</td>
                     </tr>
                 </table>
+                <br>
                 <p>
-                    Volunteer in childcare centers and kindergartens in low-income area, helping with all aspects of supervising and stiumulating local children, including in lessons, games and in break times.
-                </p>
+                    Support childcare centers and kindergartens in low-income communities, helping with supervision, learning activities, playtime, and daily routines to foster child development.                </p>
                 <br>
                 <br>
                 <button id="project">View Project</button>
