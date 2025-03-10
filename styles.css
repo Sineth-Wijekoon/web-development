@@ -77,15 +77,31 @@ footer {
   margin-top: auto;
 }
 
-.footer_text {
-  display: flex;
-  justify-content: left;
+.footer_image{
+  padding-right: 79%;
   width: 100%;
-  padding-left: 14px;
 }
 
-.footer_text a {
-  text-decoration: none;
+.footer_image img{
+  width: 130px;
+
+}
+
+.footer_text{
+  margin-top: -100px;
+  margin-left: 150px;
+  width: 100%;
+}
+
+.hashtag{
+  margin-top: -50px;
+  margin-left: 190%;
+  color: #FF8429;
+  font-size: 20px;
+}
+
+.footer_image a{
+  margin-left: 400%;
 }
 
 .logo {

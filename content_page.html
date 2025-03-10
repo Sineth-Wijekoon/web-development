@@ -1,0 +1,268 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="styles.css">
+        <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+        <title>template</title>
+        <style>
+            body{
+                background-color: whitesmoke;
+            }
+
+            .content_page{
+                width: 100%;
+                margin-left: 7%;
+            }
+
+            .introduction{
+                width: 50%;
+                margin-left: 3%;
+                margin-top: 100px;
+            }
+
+            .introduction h1{
+               margin-top: 40px;
+               margin-left: 70px;
+               color: #EB8009;
+            }
+
+            .introduction p{
+                font-size: 20px;
+                margin-top: 50px;
+                width: 70%;
+                text-align: center;
+                margin-left: 90px;
+            }
+
+            .introduction img{
+                width: 80%;
+                margin-left: 100%;
+                margin-top: -220px;
+                border: 5px solid #ffdd47;
+            }
+
+            .introduction img:hover{
+                transform: scale(1.05);
+            }
+
+            .causes_hunger{
+                width: 50%;
+                margin-left: 3%;
+                margin-top: 100px;
+            }
+
+            .causes_hunger h1{
+               margin-top: 40px;
+               margin-left: 70px;
+               color: #EB8009;
+            }
+
+            .causes_hunger ul{
+                font-size: 20px;
+                margin-top: 50px;
+                width: 70%;
+                margin-left: 90px;
+            }
+
+            .causes_hunger img{
+                width: 80%;
+                margin-left: 100%;
+                margin-top: -240px;
+                border: 5px solid #ffdd47;
+            }
+
+            .causes_hunger img:hover{
+                transform: scale(1.05);
+            }
+
+            .hunger_rates{
+                width: 100%;
+                margin-top: 100px;
+            }
+
+            .hunger_rates h1{
+               margin-top: 40px;
+               margin-left: 37%;
+               color: #EB8009;
+            }
+
+            .hunger_rates ul{
+                font-size: 20px;
+                margin-top: 50px;
+                width: 80%;
+                display: flex;
+                list-style: none;
+                margin: 0;
+                margin-left: 10%;  
+            }
+
+            .hunger_rates ul li{
+                padding: 60px;
+                width: 100%;
+                text-align: center;
+                font-size: 25px;
+            }
+
+            .menu_bar {
+                position: fixed; /* Keeps it fixed in place */
+                top: 0;
+                left: 0;
+                width: 200px; /* Adjust width as needed */
+                height: 100vh; /* Makes it span the full viewport height */
+                background-color: #333; /* Dark background */
+                display: flex;
+                flex-direction: column;
+                padding-top: 110px; /* Adds spacing at the top */
+            }
+
+            .menu_bar a {
+                color: white;
+                text-decoration: none;
+                padding: 15px;
+                text-align: center;
+                font-size: 18px;
+                border-bottom: 1px solid #555; /* Adds a divider between items */
+            }
+
+            .menu_bar a:hover {
+                background-color: #444; /* Slightly lighter background on hover */
+            }
+
+            footer{
+                z-index: 1000;
+            }
+
+            #top{
+                position: fixed;
+                z-index: 1000;
+                padding: 20px;
+                margin-left: 90%;
+                margin-top: 20px;
+                border-radius: 20px;
+                background-color: lightblue;
+            }
+
+            #top a{
+                text-decoration: none;
+                font-size: 15px;
+            }
+        </style>
+    </head>
+
+    <body>
+        <header id="navbar">
+            <div class="logo">
+                <img src="images/logo3.jpg" alt="logo">
+                <div class="title">
+                    <h1>United Nations</h1>
+                    <b>Sustainable Development</b>
+                    <br>
+                    <small>End hunger, achieve food security</small>
+                </div>
+            </div>
+            <nav class="navbar">
+                <ul>
+                    <li><a href="homepage.html">Home Page </a></li>
+                    <li><a href="volunteer_page.html">Volunteer</a></li>
+                    <li><a href="table.html">Table</a></li>
+                    <li><a href="#user_profile">User Profile</a></li>
+                    <li><a href="feedback_form.html">Feedback</a></li>
+                    <li><a href="#sitemap">Sitemap</a></li>
+                    <li><a href="#team">Team</a></li>
+                </ul>
+            </nav>
+        </header>
+
+        <script>
+            let lastScrollTop = 0;
+            const navbar = document.getElementById('navbar');
+        
+            window.addEventListener('scroll', function() {
+                const scrollTop = window.pageYOffset || document.documentElement.scrollTop;
+                if (scrollTop > lastScrollTop) {
+                    // Scroll Down
+                    navbar.style.top = '-100px'; // Adjust this value based on your navbar height
+                } else {
+                    // Scroll Up
+                    navbar.style.top = '0';
+                }
+                lastScrollTop = scrollTop;
+            });
+        </script>
+
+        <div class="menu_bar">
+            <a href="#introduction">Introduction</a>
+            <a href="#causes">Causes of Hunger</a>
+            <a href="#rates">Hunger Rates</a>
+            <a href="#effects">Effects of Global Hunger</a>
+            <a href="#solutions">Steps to resolve global Hunger</a>
+        </div>
+        <button id="top"><a href="#introduction">Go to Top</a></button>
+        <div class="content_page">
+            <div class="introduction" id="introduction">
+                <h1>INTRODUCTION TO GLOBAL HUNGER</h1>
+                <p>Global Hunger is one of the most pressing problems of the modern day. Many communities are still struggling with food insecurity,
+                    malnutrition and starvation. It is also connection with poverty. This crisis is a must to be addressed and resolved and to make the oppurtunity
+                    for everyone to have access to nutritious food and the oppurtunity to thrive.
+                </p>
+                <img src="images/africa1.jpg" alt="introduction image">
+            </div>
+            <div class="causes_hunger" id="causes">
+                <h1>CAUSES OF GLOBAL HUNGER</h1>
+                <ul>
+                    <li><b>Poverty</b> - Low income families cannot afford food</li>
+                    <li><b>Conflict and war</b> - Agricultural Systems destroyed and Food items scarce</li>
+                    <li><b>Climate Change</b> - Events like floods or droughts can destroy agricultural lands massively</li>
+                    <li><b>Economic Instability</b> - Inflation, and the countries economy makes food innaccessible to certain groups of people</li>
+                </ul>
+                <img src="images/content page/image1.jpg" alt="causes image">
+            </div>
+            <div class="hunger_rates" id="rates">
+                <h1>Rates of Global Hunger</h1>
+                <ul>
+                    <li>735 Million People worldwide suffer from Hunger</li>
+                    <li>45 Million Children suffer from malnutrition</li>
+                    <li>1.3 Billion tons of food is wasted, enough to feed the hunger</li>
+                    <li>Africa and Asia have the highest rates of hunger</li>
+                </ul>
+            </div>
+            <div class="causes_hunger" id="effects">
+                <h1>EFFECTS OF GLOBAL HUNGER</h1>
+                <ul>
+                    <li><b>Health Consequences</b> - malnutrition can increase health vulnerabilities</li>
+                    <li><b>Child Development Issues</b> - Hunger can lead to stunted growth and lower academic performance</li>
+                    <li><b>Economic Impact</b> - Hunger leads causes lower productivity thus leading to lower economic growth</li>
+                    <li><b>Social Instability</b> - Hunger can lead to conflict over resources and political Instability</li>
+                </ul>
+                <img src="images/content page/image2.jpg" alt="effects image">
+            </div>
+            <div class="causes_hunger" id="solutions">
+                <h1>SOLUTIONS TO GLOBAL HUNGER</h1>
+                <ul>
+                    <li><b>Improving agricultural practices</b> - Sustainable Farming techniques</li>
+                    <li><b>Reducing Food waste</b> - Better consumption habits and storage facilities can decrease food waste</li>
+                    <li><b>Economic Support</b> - Investing in farmers and their wages can increase the farming productivity</li>
+                    <li><b>Access to Education</b> - Education communities about nutrition and food sustainability can empower them</li>
+                </ul>
+                <img src="images/content page/image3.jpg" alt="solutions image" >
+            </div>
+        </div>
+        
+        <footer>
+            <div class="footer_image">
+                <img src="images/logo3.jpg" alt="website_logo">
+                <div class="footer_text">
+                    <h3>United Nations Sustainable Development</h3>
+                    <h5>Email:goal2@email.com</h5>
+                    <h5>Tel: 123456789</h5>
+                </div>
+                <div class="hashtag">
+                    <h1>#ENDHUNGER</h1>
+                </div>
+                <a href="pageEditor_ST0.html">Sineth_Wijekoon_Editor_Page</a>
+            </div>
+        </footer>
+    </body>
+</html>
